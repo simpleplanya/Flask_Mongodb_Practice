@@ -5,6 +5,5 @@ app = Flask(__name__)
 app.register_blueprint(blueprint)
 app.register_blueprint(Json_pass)
 
-
 if __name__ == "__main__":
     app.run()

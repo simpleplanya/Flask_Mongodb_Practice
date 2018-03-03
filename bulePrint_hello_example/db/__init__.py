@@ -1,7 +1,5 @@
 from pymongo  import MongoClient
-
-if __name__ == '__main__':
+from conf import dbConfig
+def get_db():
     db = MongoClient(host='localhost:27017',replicaset=None)['Jq']
-    con = db['testData']
-    x = db.testData.find({})
-    print(list(con.find()))
+    return db
